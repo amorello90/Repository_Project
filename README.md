@@ -25,8 +25,6 @@ Load balancing ensures that the application will be highly available and reliabl
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files in Web-1 and Web-2 using the filebeat software and system metrics and statistics using metricbeat software.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -94,7 +92,6 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include...
 - Run the playbook, and navigate to http://168.61.43.125:5601/app/kibana#/home to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - install-elk.yml copy to /etc/ansible/install-elk.yml
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
@@ -107,7 +104,3 @@ _Use these commands to download the playbook, run the playbook, update the files
 - `ansible-playbook playbook.yml`
 - Command to run the playbook:
 - `ansible-playbook install-elk.yml`
-- Command to update the files:
-- `sudo apt-get update -y`
-- Command to upgrade:
-- `sudo apt-get update -y`
